@@ -1,0 +1,17 @@
+{
+  "name": "projekt-admin-backend",
+  "version": "1.0.0",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
