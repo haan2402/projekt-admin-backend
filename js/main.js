@@ -107,13 +107,37 @@ function writeMenu(menu) {
         </div>
         <p class="dish-desc">${item.description}</p>
         <div class="buttons">
-        <button class="edit-Btn" data-id="${item.id}">Ändra</button>
-        <button class="delete-Btn" data-id="${item.id}">Ta bort</button>
+        <button class="edit-Btn">Ändra</button>
+        <button class="delete-Btn">Ta bort</button>
         </div>
         </div> `;
 
+        //eventlyssnare för radera knappen
+        const deleteButton = li.querySelector('.delete-Btn');
+        deleteButton.addEventListener('click', () => removeDish(item._id));
+
         menuList.appendChild(li);
     });
+}
+
+//funktion för att radera en maträtt från meny
+async function removeDish(id) {
+    try {
+        const response = await fetch(`${api}/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Authorization": "Bearer " + token
+            }
+        });
+
+        //om radera är ok
+        if(response.ok) {
+            await getMenu();
+        }
+
+    } catch (err) {
+        console.log("Gick inte att radera...", err);
+    }
 }
 
 
