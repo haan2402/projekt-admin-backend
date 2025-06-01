@@ -105,3 +105,52 @@ button:hover {
     background-color: #333;
     transition: background-color 0.2s ease;
 }
+
+/*styling menu list*/
+#list-food {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 1em;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.dish-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dish-price {
+    font-weight: bold;
+}
+
+.dish-desc {
+    margin-bottom: 1em;
+}
+
+.buttons {
+    display: flex;
+    gap: 2em;
+}
+
+.edit-Btn {
+    background-color: #c79603;
+}
+
+.delete-Btn {
+    background-color: #e60000;
+}
