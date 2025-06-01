@@ -54,3 +54,11 @@ function writeMenu(menu) {
         menuList.appendChild(li);
     });
 }
+
+
+
+//eventlyssnare för att kunna logga ut
+document.getElementById("logout-btn").addEventListener("click", () => {
+    localStorage.removeItem("token");
+    window.location.href = "index.html";
+});
