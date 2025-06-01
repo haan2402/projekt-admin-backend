@@ -25,22 +25,23 @@
         <!--formulär för att lägga till maträtt i menyn-->
         <div>
             <h2>Lägg till ny rätt</h2>
+            <p id="message"></p>
             <form id="add-Form">
                 <label for="name">Namn:</label>
-                <input type="text" name="name">
+                <input type="text" name="name" id="name">
                 <br>
                 <label for="description">Beskrivning:</label>
-                <input type="text" name="description">
+                <input type="text" name="description" id="description">
                 <br>
                 <label for="category">Kategori:</label>
-                <select name="category">
+                <select name="category" id="category">
                     <option value="Förrätt">Förrätt</option>
                     <option value="Varmrätt">Varmrätt</option>
                     <option value="Efterrätt">Efterrätt</option>
                 </select>
                 <br>
                 <label for="price">Pris:</label>
-                <input type="number" name="price">
+                <input type="number" name="price" id="price">
                 <br>
                 <button type="submit">Lägg till</button>
             </form>
