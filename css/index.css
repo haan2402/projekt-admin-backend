@@ -1,0 +1,73 @@
+/*main styling for page*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    height: 100vh;
+}
+
+/*styling for login page*/
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    min-height: 70vh;
+    background-color: white;
+    margin-top: 4em;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0, 0.2);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.login-container form label {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.login-container form input {
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+}
+
+.login-container form button {
+    width: 40%;
+    padding: 10px;
+    background-color: #241f1f;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-container form button:hover {
+    background-color: #333;
+    transition: background-color 0.2s ease;
+}
+
+#message {
+    font-size: 1.1em;
+    color: red;
+    padding: 10px;
+}
