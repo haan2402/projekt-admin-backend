@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal sida</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!--header för admin sida, logga ut knapp-->
+    <header>
+        <h1>Bistro Norr - Admin</h1>
+        <nav>
+            <ul>
+                <li><button id="logout-btn" class="logout-btn">Logga ut</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main för admin sida-->
+    <main class="admin-container">
+
+        <!--formulär för att lägga till maträtt i menyn-->
+        <section>
+            <h2>Lägg till ny rätt</h2>
+            <form id="add-Form">
+                <label for="name">Namn:</label>
+                <input type="text" name="name">
+                <br>
+                <label for="description">Beskrivning:</label>
+                <input type="text" name="description">
+                <br>
+                <label for="category">Kategori:</label>
+                <select name="category">
+                    <option value="Förrätt">Förrätt</option>
+                    <option value="Varmrätt">Varmrätt</option>
+                    <option value="Efterrätt">Efterrätt</option>
+                </select>
+                <br>
+                <label for="price">Pris:</label>
+                <input type="number" name="price">
+                <br>
+                <button type="submit">Lägg till</button>
+            </form>
+        </section>
+
+        <!--lista med alla maträtter, kommer lägga till ta bort och redigera funktion i JavaScript-->
+        <section>
+            <h3>Alla maträtter</h3>
+            <ul id="list-food"></ul>
+        </section>
+    </main>
+    
+</body>
+</html>
