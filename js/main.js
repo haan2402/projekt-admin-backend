@@ -6,7 +6,7 @@ if(!token) {
     window.location.href = "index.html"; 
 } 
 
-const api = 'projekt-backend-databas-production.up.railway.app/api/foodItems';
+const api = 'https://projekt-backend-databas-production.up.railway.app/api/foodItems';
 const menuList = document.getElementById("list-food");
 
 //kontroll av token och laddar in data från api
