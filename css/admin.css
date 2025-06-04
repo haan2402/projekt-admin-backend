@@ -167,4 +167,32 @@ button:hover {
     form input {
     width: 300px;
     }
+
+    .menu-item {
+        padding: 10px;
+        margin-bottom: 1em;
+    }
+
+    .dish-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4em;
+    }
+
+    .dish-name {
+        font-size: 1.1em;
+    }
+
+    .dish-price {
+        font-size: 1em;
+    }
+
+    .dish-desc { 
+        font-size: 1em;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.5em;
+    }
 }
